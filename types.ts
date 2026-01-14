@@ -1,3 +1,4 @@
+
 export interface Project {
   id: string;
   title: string;
@@ -14,16 +15,17 @@ export interface SkillCategory {
   icon: string;
 }
 
-export interface ChatMessage {
-  role: 'user' | 'model';
-  text: string;
-  isError?: boolean;
-}
-
 export enum SectionId {
   HOME = 'home',
   ABOUT = 'about',
   PROJECTS = 'projects',
   SKILLS = 'skills',
   CONTACT = 'contact'
+}
+
+// Added ChatMessage interface to support AI Chat functionality
+export interface ChatMessage {
+  role: 'user' | 'model';
+  text: string;
+  isError?: boolean;
 }

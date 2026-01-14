@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { MessageSquare, X, Send, Loader2, Sparkles } from 'lucide-react';
-import { sendMessageToGemini } from '../services/geminiService';
-import { ChatMessage } from '../types';
+import { sendMessageToGemini } from '../services/geminiService.ts';
+import { ChatMessage } from '../types.ts';
 import { GenerateContentResponse } from '@google/genai';
 
 const AIChat: React.FC = () => {
@@ -36,7 +36,6 @@ const AIChat: React.FC = () => {
         throw new Error("Service unavailable");
       }
 
-      // Create a placeholder for the model response
       setMessages(prev => [...prev, { role: 'model', text: '' }]);
 
       let fullText = '';
@@ -73,11 +72,8 @@ const AIChat: React.FC = () => {
 
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end">
-      {/* Chat Window */}
       {isOpen && (
         <div className="mb-4 w-[350px] h-[500px] bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700 rounded-xl shadow-2xl flex flex-col overflow-hidden transition-all duration-300 ease-out animate-in fade-in slide-in-from-bottom-10">
-          
-          {/* Header */}
           <div className="bg-zinc-50 dark:bg-zinc-850 p-4 border-b border-zinc-200 dark:border-zinc-800 flex justify-between items-center">
             <div className="flex items-center gap-2">
               <Sparkles className="w-5 h-5 text-accent-600 dark:text-accent-500" />
@@ -91,7 +87,6 @@ const AIChat: React.FC = () => {
             </button>
           </div>
 
-          {/* Messages Area */}
           <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-zinc-50/95 dark:bg-zinc-900/95">
             {messages.map((msg, idx) => (
               <div 
@@ -119,7 +114,6 @@ const AIChat: React.FC = () => {
             <div ref={messagesEndRef} />
           </div>
 
-          {/* Input Area */}
           <div className="p-4 bg-zinc-50 dark:bg-zinc-850 border-t border-zinc-200 dark:border-zinc-800">
             <div className="relative">
               <input
@@ -139,14 +133,10 @@ const AIChat: React.FC = () => {
                 <Send size={16} />
               </button>
             </div>
-            <div className="text-center mt-2">
-                <p className="text-[10px] text-zinc-500 dark:text-zinc-600">AI can make mistakes. Check important info.</p>
-            </div>
           </div>
         </div>
       )}
 
-      {/* Toggle Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
         className={`p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center ${

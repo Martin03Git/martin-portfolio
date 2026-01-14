@@ -1,31 +1,25 @@
+
 import { GoogleGenAI, Chat, GenerateContentResponse } from "@google/genai";
-import { AI_SYSTEM_INSTRUCTION } from '../constants';
+import { AI_SYSTEM_INSTRUCTION } from '../constants.ts';
 
 let chatSession: Chat | null = null;
 
-const getClient = () => {
-  const apiKey = process.env.API_KEY;
-  if (!apiKey) {
-    console.warn("API Key not found in environment variables.");
-    return null;
-  }
-  return new GoogleGenAI({ apiKey });
-};
-
+// Initialize the chat session with the model and system instruction
 export const initializeChat = async () => {
-  const client = getClient();
-  if (!client) return null;
+  // Always use a new GoogleGenAI instance with the API key from process.env
+  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
-  chatSession = client.chats.create({
-    model: 'gemini-2.5-flash',
+  chatSession = ai.chats.create({
+    model: 'gemini-3-flash-preview',
     config: {
       systemInstruction: AI_SYSTEM_INSTRUCTION,
-      thinkingConfig: { thinkingBudget: 0 }, // Disable thinking for faster chat response
+      thinkingConfig: { thinkingBudget: 0 },
     },
   });
   return chatSession;
 };
 
+// Send message to Gemini and return the streaming response
 export const sendMessageToGemini = async (message: string): Promise<AsyncIterable<GenerateContentResponse> | null> => {
   if (!chatSession) {
     await initializeChat();
@@ -40,7 +34,7 @@ export const sendMessageToGemini = async (message: string): Promise<AsyncIterabl
     return result;
   } catch (error) {
     console.error("Error sending message to Gemini:", error);
-    // If session expired or other error, try re-initializing once
+    // Re-initialize chat session on failure to attempt recovery
     await initializeChat();
     if(chatSession) {
        return await chatSession.sendMessageStream({ message });
