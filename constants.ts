@@ -5,7 +5,7 @@ export const DEVELOPER_NAME = "Martin";
 export const DEVELOPER_ROLE = "Web Development Enthusiast";
 
 export const ABOUT_ME = `
-I am a university student passionate about building functional web applications. Through academic projects and personal initiatives, I am developing my skills in full-stack development, ranging from responsive interface design to database management with MySQL.
+I am a university student passionate about building functional web applications. Through academic projects and personal initiatives, I am developing my skills in full-stack development, ranging from responsive interface design to database management.
 
 I enjoy bridging the gap between frontend and backend logic. Additionally, I have a keen interest in business automation, utilizing tools like n8n to streamline workflows.
 `;
@@ -41,7 +41,7 @@ export const PROJECTS: Project[] = [
     techStack: ['n8n', 'JSON', 'Telegram', 'Google Sheets', 'Lynk.id Webhook'],
     imageUrls: [
       'https://github.com/Martin03Git/public-foto/blob/main/martin-portfolio/LynkID_Notifier-bot_flow.png?raw=true',
-      'https://github.com/Martin03Git/public-foto/blob/main/martin-portfolio/LynkID_Notifier-daily_summary_flow.png?raw=true',
+      'https://github.com/Martin03Git/public-foto/blob/main/martin-portfolio/LynkID_Notifier-daily_summery_flow.png?raw=true',
       'https://github.com/Martin03Git/public-foto/blob/main/martin-portfolio/LynkID_Notifier-purchased_flow.png?raw=true',
       'https://github.com/Martin03Git/public-foto/blob/main/martin-portfolio/LynkID_Notifier-telegram_messages.png?raw=true'
     ],
