@@ -34,7 +34,7 @@ const About: React.FC = () => {
           <div className="text-center mb-16">
             <div className="mb-8 flex justify-center">
               <img 
-                src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=150&auto=format&fit=crop" 
+                src="https://github.com/Martin03Git/public-foto/blob/main/martin-portfolio/profile.jpg?raw=true" 
                 alt="Martin"
                 className="w-24 h-24 rounded-full border-4 border-zinc-900 p-1 object-cover shadow-xl ring-2 ring-accent-500/20"
               />
@@ -50,7 +50,7 @@ const About: React.FC = () => {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
                 { label: 'Years Learning', value: '1.5+' },
-                { label: 'Projects Built', value: '15+' },
+                { label: 'Projects Built', value: '7+' },
                 { label: 'Experience', value: 'Junior' }
             ].map((stat, i) => (
                 <div 
