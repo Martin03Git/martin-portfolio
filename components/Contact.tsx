@@ -67,7 +67,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <p className="text-xs text-zinc-500 font-bold uppercase tracking-widest mb-1">Location</p>
-                  <p className="text-white">Available for Remote</p>
+                  <p className="text-white">Indonesia</p>
                 </div>
               </div>
             </div>
