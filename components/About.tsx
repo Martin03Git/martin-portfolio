@@ -28,30 +28,37 @@ const About: React.FC = () => {
     <section 
       id={SectionId.ABOUT} 
       ref={sectionRef}
-      className="py-24 border-y border-zinc-900"
+      className="py-24 border-y border-zinc-900 bg-zinc-950"
     >
        <div className={`max-w-4xl mx-auto px-6 transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-          <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">About Me</h2>
-            <div className="w-12 h-1 bg-accent-500 mx-auto rounded-full"></div>
+          <div className="text-center mb-16">
+            <div className="mb-8 flex justify-center">
+              <img 
+                src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=150&auto=format&fit=crop" 
+                alt="Martin"
+                className="w-24 h-24 rounded-full border-4 border-zinc-900 p-1 object-cover shadow-xl ring-2 ring-accent-500/20"
+              />
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-black text-white mb-4 tracking-tight">About Me</h2>
+            <div className="w-16 h-1.5 bg-accent-500 mx-auto rounded-full"></div>
           </div>
           
-          <p className="text-lg sm:text-xl text-zinc-400 leading-relaxed text-center mb-16 font-light">
-            {ABOUT_ME}
+          <p className="text-lg sm:text-xl text-zinc-400 leading-relaxed text-center mb-16 font-light italic">
+            "{ABOUT_ME}"
           </p>
           
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
                 { label: 'Years Learning', value: '1.5+' },
                 { label: 'Projects Built', value: '15+' },
-                { label: 'Current Role', value: 'Student' }
+                { label: 'Experience', value: 'Junior' }
             ].map((stat, i) => (
                 <div 
                   key={i} 
-                  className="flex flex-col items-center p-6 bg-zinc-900/50 rounded-2xl border border-zinc-800"
+                  className="flex flex-col items-center justify-center p-8 bg-zinc-900/30 rounded-3xl border border-zinc-800 hover:border-accent-500/30 transition-all group"
                 >
-                    <span className="text-3xl font-black text-accent-500">{stat.value}</span>
-                    <span className="text-xs text-zinc-500 uppercase tracking-widest mt-2 font-bold">{stat.label}</span>
+                    <span className="text-4xl font-black text-white group-hover:text-accent-500 transition-colors">{stat.value}</span>
+                    <span className="text-[10px] text-zinc-500 uppercase tracking-[0.2em] mt-3 font-bold">{stat.label}</span>
                 </div>
             ))}
           </div>

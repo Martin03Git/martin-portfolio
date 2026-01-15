@@ -29,6 +29,9 @@ Technical Skills:
 
 Featured Projects:
 1. Weather Sphere: A personal project built to practice API integration (OpenWeather API and ZenQuotes API). Built with Node.js and Express.
+2. KawanAdmin - AI Chatbot UMKM: AI-powered customer support and order recording for small businesses using n8n and Supabase.
+3. Lynk.id Telegram Notifier: Real-time notification system bridging Lynk.id transaction data with Telegram.
+4. Photographer Appointment Automation: Cost-effective booking system preventing double-booking using Google Sheets.
 
 Communication Style:
 - Professional yet approachable.
@@ -42,16 +45,57 @@ export const PROJECTS: Project[] = [
     title: 'Weather Sphere',
     description: 'This is a personal project I created to test my skills and understanding of how to fetch, manage, and display data from an API.',
     techStack: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express.js', 'OpenWeather API', 'ZenQuotes API'],
-    imageUrl: 'https://images.unsplash.com/photo-1592210454132-328629aff92d?q=80&w=1000&auto=format&fit=crop',
+    imageUrls: ['https://images.unsplash.com/photo-1592210454132-328629aff92d?q=80&w=1000&auto=format&fit=crop'],
     link: 'https://weather-sphere-gold.vercel.app/',
     github: 'https://github.com/Martin03Git/WeatherSphere'
+  },
+  {
+    id: 'kawanadmin',
+    title: 'KawanAdmin - AI Chatbot UMKM',
+    description: 'This is a personal project I created to test my skills in building AI-powered solutions that automate customer support, order recording, and real-time status tracking for small businesses.',
+    techStack: ['n8n', 'Telegram', 'Google Sheets', 'JSON', 'Supabase'],
+    imageUrls: [
+      'https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=600&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=600&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1587560699334-bea93391dcef?q=80&w=600&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=600&auto=format&fit=crop'
+    ],
+    link: '',
+    github: ''
+  },
+  {
+    id: 'lynk-notifier',
+    title: 'Lynk.id Telegram Notifier',
+    description: 'This is a personal project I created to practice workflow automation by building a real-time notification system that bridges Lynk.id transaction data with Telegram alerts.',
+    techStack: ['n8n', 'JSON', 'Telegram', 'Google Sheets', 'Lynk.id Webhook'],
+    imageUrls: [
+      'https://images.unsplash.com/photo-1614680376593-902f74cf0d41?q=80&w=600&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=600&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=600&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=600&auto=format&fit=crop'
+    ],
+    link: '',
+    github: ''
+  },
+  {
+    id: 'photo-booking',
+    title: 'Photographer Appointment Automation',
+    description: 'This is a personal project I developed to apply my full-stack knowledge in creating a cost-effective booking system that prevents double-booking using real-time Google Sheets validation.',
+    techStack: ['n8n', 'Google Sheets', 'HTML', 'CSS', 'JSON'],
+    imageUrls: [
+      'https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=600&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1506784365847-bbad939e9335?q=80&w=600&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1533158326339-7f3cf2404354?q=80&w=600&auto=format&fit=crop'
+    ],
+    link: '',
+    github: ''
   },
   {
     id: 'coming-soon',
     title: 'Coming Soon',
     description: 'Currently exploring new technologies and brainstorming ideas for my next application. Stay tuned!',
     techStack: ['Loading...'],
-    imageUrl: 'https://images.unsplash.com/photo-1555099962-4199c345e5dd?q=80&w=1000&auto=format&fit=crop',
+    imageUrls: ['https://images.unsplash.com/photo-1555099962-4199c345e5dd?q=80&w=1000&auto=format&fit=crop'],
     link: '',
     github: ''
   }

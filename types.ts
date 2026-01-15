@@ -4,7 +4,7 @@ export interface Project {
   title: string;
   description: string;
   techStack: string[];
-  imageUrl: string;
+  imageUrls: string[]; // Changed from imageUrl to imageUrls array
   link: string;
   github?: string;
 }
