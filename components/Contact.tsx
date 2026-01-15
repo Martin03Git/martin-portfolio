@@ -45,7 +45,7 @@ const Contact: React.FC = () => {
           <div className={`transform transition-all duration-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-6 tracking-tight">Let's connect.</h2>
             <p className="text-zinc-400 text-lg mb-10 leading-relaxed max-w-lg">
-              I'm currently seeking junior developer roles and internships. If you have a question or just want to discuss web technology, feel free to drop a message!
+              If you have a question or just want to discuss web technology, feel free to drop a message!
             </p>
             
             <div className="space-y-8 mb-12">
@@ -55,8 +55,8 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <p className="text-xs text-zinc-500 font-bold uppercase tracking-widest mb-1">Email</p>
-                  <a href="mailto:martin@example.com" className="text-white hover:text-accent-500 transition-colors">
-                    martin@example.com
+                  <a href="mailto:martinekaputrajoya@gmail.com" className="text-white hover:text-accent-500 transition-colors">
+                    martinekaputrajoya@gmail.com
                   </a>
                 </div>
               </div>
@@ -67,20 +67,22 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <p className="text-xs text-zinc-500 font-bold uppercase tracking-widest mb-1">Location</p>
-                  <p className="text-white">Available for Remote / Hybrid</p>
+                  <p className="text-white">Available for Remote</p>
                 </div>
               </div>
             </div>
 
             <div className="flex gap-4">
                {[
-                 { icon: <Github size={20} />, label: 'GitHub' },
-                 { icon: <Linkedin size={20} />, label: 'LinkedIn' },
-                 { icon: <Twitter size={20} />, label: 'Twitter' }
+                 { icon: <Github size={20} />, label: 'GitHub', url: 'https://github.com/Martin03Git/' },
+                 { icon: <Linkedin size={20} />, label: 'LinkedIn', url: 'https://id.linkedin.com/in/martin-eka-putra-joya' },
+                 { icon: <AtSign size={20} />, label: 'Threads', url: 'https://www.threads.com/@martiiiiiiin.dev' }
                ].map((social, i) => (
                  <a 
                    key={i} 
-                   href="#" 
+                   href={social.url} 
+                   target="_blank"
+                   rel="noopener noreferrer"
                    className="p-3 bg-zinc-900 border border-zinc-800 rounded-xl text-zinc-400 hover:text-accent-500 hover:border-accent-500/50 transition-all"
                    aria-label={social.label}
                  >
