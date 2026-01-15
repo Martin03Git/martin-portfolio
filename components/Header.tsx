@@ -58,7 +58,7 @@ const Header: React.FC = () => {
               <Terminal className="w-5 h-5 text-accent-500" />
             </div>
             <img 
-              src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=100&auto=format&fit=crop" 
+              src="https://github.com/Martin03Git/public-foto/blob/main/martin-portfolio/profile.jpg?raw=true" 
               alt="Avatar"
               className="absolute -top-1 -right-1 w-4 h-4 rounded-full border border-zinc-950 object-cover shadow-sm"
             />
