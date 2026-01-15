@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { SectionId } from '../types.ts';
-import { Mail, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, MapPin, Send, Github, Linkedin, AtSign } from 'lucide-react';
 
 const Contact: React.FC = () => {
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
