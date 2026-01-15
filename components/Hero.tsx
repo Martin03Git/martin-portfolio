@@ -81,7 +81,7 @@ const Hero: React.FC = () => {
               {/* Image Container with fixed max size */}
               <div className="relative w-full max-w-[280px] sm:max-w-[360px] aspect-square rounded-[2.5rem] border-2 border-zinc-800 bg-zinc-900 overflow-hidden shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=800&auto=format&fit=crop" 
+                  src="https://github.com/Martin03Git/public-foto/blob/main/martin-portfolio/profile.jpg?raw=true" 
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />
