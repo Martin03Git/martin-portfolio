@@ -54,9 +54,9 @@ export const PROJECTS: Project[] = [
     description: 'This is a personal project I developed to apply my full-stack knowledge in creating a cost-effective booking system that prevents double-booking using real-time Google Sheets validation.',
     techStack: ['n8n', 'Google Sheets', 'HTML', 'CSS', 'JSON'],
     imageUrls: [
-      'https://github.com/Martin03Git/public-foto/blob/main/martin-portfolio/photographer_appoinment_automation-workflow.png?raw=true',
-      'https://github.com/Martin03Git/public-foto/blob/main/martin-portfolio/photographer_appoinment_automation-webform.png?raw=true',
-      'https://github.com/Martin03Git/public-foto/blob/main/martin-portfolio/photographer_appoinment_automation-booing_succeed.png?raw=true'
+      'https://github.com/Martin03Git/public-foto/blob/main/martin-portfolio/photographer_appoinment_automation-workflow.jpg?raw=true',
+      'https://github.com/Martin03Git/public-foto/blob/main/martin-portfolio/photographer_appoinment_automation-webform.jpg?raw=true',
+      'https://github.com/Martin03Git/public-foto/blob/main/martin-portfolio/photographer_appoinment_automation-booing_succeed.jpg?raw=true'
     ],
     link: '#',
     github: 'https://github.com/Martin03Git/'
