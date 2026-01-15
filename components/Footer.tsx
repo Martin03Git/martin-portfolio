@@ -8,9 +8,9 @@ const Footer: React.FC = () => {
           © {new Date().getFullYear()} Martin Dev. Built with passion and React.
         </div>
         <div className="flex gap-8">
-            <a href="#" className="text-zinc-500 hover:text-white transition-colors text-xs font-bold uppercase tracking-widest">GitHub</a>
-            <a href="#" className="text-zinc-500 hover:text-white transition-colors text-xs font-bold uppercase tracking-widest">LinkedIn</a>
-            <a href="#" className="text-zinc-500 hover:text-white transition-colors text-xs font-bold uppercase tracking-widest">Email</a>
+            <a href="https://github.com/Martin03Git/" className="text-zinc-500 hover:text-white transition-colors text-xs font-bold uppercase tracking-widest">GitHub</a>
+            <a href="https://id.linkedin.com/in/martin-eka-putra-joya" className="text-zinc-500 hover:text-white transition-colors text-xs font-bold uppercase tracking-widest">LinkedIn</a>
+            <a href="mailto:martinekaputrajoya@gmail.com" className="text-zinc-500 hover:text-white transition-colors text-xs font-bold uppercase tracking-widest">Email</a>
         </div>
       </div>
     </footer>
