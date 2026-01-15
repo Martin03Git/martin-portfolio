@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
     <footer className="py-12 border-t border-zinc-900 bg-zinc-950">
       <div className="max-w-7xl mx-auto px-6 flex flex-col items-center gap-6">
         <div className="text-zinc-600 text-sm font-medium">
-          © {new Date().getFullYear()} Martin Dev. Built with passion and React.
+          © {new Date().getFullYear()} Martin Dev. Built with passion.
         </div>
         <div className="flex gap-8">
             <a href="https://github.com/Martin03Git/" className="text-zinc-500 hover:text-white transition-colors text-xs font-bold uppercase tracking-widest">GitHub</a>
