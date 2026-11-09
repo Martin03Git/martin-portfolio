@@ -79,12 +79,6 @@ const Header: React.FC = () => {
               {link.label}
             </button>
           ))}
-          <a 
-            href="#" 
-            className="ml-4 px-5 py-2.5 bg-accent-600 text-white text-xs font-bold uppercase tracking-wider rounded-lg hover:bg-accent-500 transition-all shadow-lg shadow-accent-600/20"
-          >
-            Resume
-          </a>
         </nav>
 
         {/* Mobile Toggle */}
